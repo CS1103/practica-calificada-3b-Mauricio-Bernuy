@@ -19,7 +19,8 @@ int main() {
 
 	receiveInput(inputs, sizex, sizey);
 	auto result = validateInputs(inputs, sizex, sizey);
-	arrange(result);
+	auto ordered = arrange(result);
 	
-	writeOutput(result);
+	writeOutput(ordered);
+	cin >> sizex;
 }

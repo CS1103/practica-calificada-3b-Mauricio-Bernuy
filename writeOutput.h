@@ -8,7 +8,7 @@
 #include <unordered_map>
 
 using namespace std;
-void writeOutput(unordered_map<int, string> input) {
+void writeOutput(vector<pair<int, string>> input) {
 	ofstream output;
 	output.open("rectangulos.out");
 
