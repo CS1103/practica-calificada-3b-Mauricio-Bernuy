@@ -7,9 +7,11 @@
 #include <sstream>
 #include <unordered_map>
 
+#include "isCompatible.h"
 using namespace std;
 
-auto stovals(string s, vector<int> r) {
+auto stovals(string s) {
+	vector<int> r;
 	char t1;
 	int x1, x2, y1, y2;
 	stringstream values(s);
@@ -24,16 +26,7 @@ auto stovals(string s, vector<int> r) {
 	return r;
 };
 
-bool isCompatible(string str, unordered_map<int, string> result) {
-	char t1;
-	int xstart, xend, ystart, yend;
-	stringstream values(str);
-	values >> t1 >> xstart >> xend >> ystart >> yend;
-	xend = xend + xstart - 1;
-	yend = yend + ystart - 1;
 
-	return true;
-}
 
 void validateInputs(unordered_map<int, string>& inputs, int& x, int& y) {
 	unordered_map<int, string> result;
@@ -41,11 +34,10 @@ void validateInputs(unordered_map<int, string>& inputs, int& x, int& y) {
 	vector<int> xstart, xend, ystart, yend;
 
 	for (auto itr = inputs.begin(); itr != inputs.end(); itr++)	{
-		char t1;
-		int t2, t3, t4, t5;
+
 
 		if (t1 == 'A') {
-			if(isCompatible(itr->second, result) == true){
+			if(isCompatible(itr->second, result, x, y) == true){
 
 		}
 

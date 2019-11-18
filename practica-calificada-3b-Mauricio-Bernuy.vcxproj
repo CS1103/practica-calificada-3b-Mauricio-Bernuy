@@ -103,6 +103,7 @@
   <ItemGroup>
     <ClInclude Include="input.h" />
     <ClInclude Include="isCompatible.h" />
+    <ClInclude Include="stovals.h" />
     <ClInclude Include="validatePos.h" />
   </ItemGroup>
   <ItemGroup>
