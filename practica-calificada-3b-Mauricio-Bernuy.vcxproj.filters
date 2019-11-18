@@ -23,5 +23,17 @@
     <ClInclude Include="input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="validatePos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="isCompatible.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="rectangulos.out" />
+    <None Include="rectangulos_example.in" />
+    <None Include="rectangulos_example.out" />
   </ItemGroup>
 </Project>

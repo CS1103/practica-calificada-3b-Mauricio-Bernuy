@@ -4,17 +4,29 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <unordered_map>
+
+#include "input.h","validatePos.h"
+
 using namespace std;
 
 int main() {
-	ofstream result;
-	result.open("rectangulos.out");
-	ifstream input("rectangulos_example.in");
-	int n, x, y;
-	string config;
-	getline(input, config);
-	stringstream configvals(config);
-	configvals >> n >> x >> y;
-	cout << config;
+	unordered_map<int, string> inputs;
+	int sizex = 0;
+	int sizey = 0;
+
+	receiveInput(inputs, sizex, sizey);
+	
+	cout << inputs.size() << sizex << sizey << endl;
+	for (auto itr = inputs.begin(); itr != inputs.end(); ++itr)
+	{
+		cout << '\t' << itr->first
+			<< '\t' << itr->second << '\n';
+	}
+
+
+	
+
+	cin >> sizex;
 
 }

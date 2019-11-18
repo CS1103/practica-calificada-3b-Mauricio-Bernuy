@@ -1,19 +1,18 @@
 #pragma once
-
-#include <fstream>
-#include <iterator>
-#include <vector>
-#include <string>
-
 using namespace std;
 
-int receiveInput() {
+void receiveInput(unordered_map<int,string>&inputs, int &x, int &y) {
 	ifstream input("rectangulos_example.in");
-	int n, x, y;
-	string config;
-	getline(input, config);
-	istringstream configvals(config);
-	configfals >> n >> x >> y;
+	int n;
+	string line;
+	getline(input, line);
+	stringstream configvals(line);
+	configvals >> n >> x >> y;
+	//cout << n << x << y;
+	for (auto i = 0; i < n; i++) {
+		getline(input, line);
+		inputs[i] = line;
+	}
 
-
+	input.close();
 }
