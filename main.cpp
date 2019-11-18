@@ -6,27 +6,20 @@
 #include <sstream>
 #include <unordered_map>
 
-#include "input.h","validatePos.h"
+#include "input.h"
+#include "validateInputs.h"
+#include "arrange.h"
+#include "writeOutput.h"
 
 using namespace std;
 
 int main() {
 	unordered_map<int, string> inputs;
-	int sizex = 0;
-	int sizey = 0;
+	int sizex, sizey;
 
 	receiveInput(inputs, sizex, sizey);
+	auto result = validateInputs(inputs, sizex, sizey);
+	arrange(result);
 	
-	cout << inputs.size() << sizex << sizey << endl;
-	for (auto itr = inputs.begin(); itr != inputs.end(); ++itr)
-	{
-		cout << '\t' << itr->first
-			<< '\t' << itr->second << '\n';
-	}
-
-
-	
-
-	cin >> sizex;
-
+	writeOutput(result);
 }

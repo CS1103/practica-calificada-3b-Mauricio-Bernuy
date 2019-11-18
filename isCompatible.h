@@ -34,6 +34,8 @@ bool isCompatible(string str, unordered_map<int, string> result, int x, int y) {
 			}
 		}
 
+
+
 	}
 
 	return check;
