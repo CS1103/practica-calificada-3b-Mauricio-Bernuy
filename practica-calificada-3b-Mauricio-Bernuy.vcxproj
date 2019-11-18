@@ -101,10 +101,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arrange.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="isCompatible.h" />
     <ClInclude Include="stovals.h" />
-    <ClInclude Include="validatePos.h" />
+    <ClInclude Include="validateInputs.h" />
+    <ClInclude Include="writeOutput.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

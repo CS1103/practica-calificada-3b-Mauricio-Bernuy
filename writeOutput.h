@@ -15,4 +15,5 @@ void writeOutput(unordered_map<int, string> input) {
 	for (auto it = input.begin(); it != input.end(); it++) {
 		output << "A " << it->second << endl;
 	}
+	output.close();
 }

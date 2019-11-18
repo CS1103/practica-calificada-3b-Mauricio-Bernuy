@@ -21,6 +21,5 @@ auto stovals(string s) {
 	r.push_back(x2);
 	r.push_back(y1);
 	r.push_back(y2);
-
 	return r;
 };

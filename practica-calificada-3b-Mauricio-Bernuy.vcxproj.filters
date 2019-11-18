@@ -23,13 +23,19 @@
     <ClInclude Include="input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="validatePos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="isCompatible.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stovals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="validateInputs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arrange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="writeOutput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
