@@ -16,11 +16,9 @@ using namespace std;
 int main() {
 	unordered_map<int, string> inputs;
 	int sizex, sizey;
-
 	receiveInput(inputs, sizex, sizey);
 	auto result = validateInputs(inputs, sizex, sizey);
 	auto ordered = arrange(result);
-	
 	writeOutput(ordered);
-	cin >> sizex;
+	//cin >> sizex;
 }
